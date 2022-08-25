@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="toolbar.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+    <title>Work</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script>
+        $(function () {
+            $(".knob").knob();
+            // Example of infinite knob, iPod click wheel
+            var val, up = 0,
+                down = 0,
+                i = 0,
+                $idir = $("div.idir"),
+                $ival = $("div.ival"),
+                incr = function () {
+                    i++;
+                    $idir.show().html("+").fadeOut();
+                    $ival.html(i);
+                },
+                decr = function () {
+                    i--;
+                    $idir.show().html("-").fadeOut();
+                    $ival.html(i);
+                };
+            $("input.infinite").knob({
+                'min': 0,
+                'max': 20,
+                'stopper': false,
+                'change': function (v) {
+                    if (val > v) {
+                        if (up) {
+                            decr();
+                            up = 0;
+                        } else {
+                            up = 1;
+                            down = 0;
+                        }
+                    } else {
+                        if (down) {
+                            incr();
+                            down = 0;
+                        } else {
+                            down = 1;
+                            up = 0;
+                        }
+                    }
+                    val = v;
+                }
+            });
+        });
+    </script>
+    	<!-- 1. Add these JavaScript inclusions in the head of your page --> 
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+		<script type="text/javascript" src="js/highcharts.js"></script> 
+		<script type="text/javascript"> 
+
+				
+            let  datappm = [80.0,20.0,30.1,80.2,30.3,30.5,40.8,50.9,50.5,50.1,80.0,20.0,30.1,80.2,30.3,30.5,40.8,50.9,50.5,50.1,30.7,30.3,30.5,40.8,50.9,50.5,50.1,30.7,30.3,30.5,40.8,50.9,50.5,50.1,30.7,80.0,20.0,30.1,80.2,30.3,30.5,40.8,50.9,50.5,50.1,30.7,30.3,30.5,40.8,50.9,50.5,50.1,30.7,20.0,30.1,80.2,30.3,30.5,40.8,50.9,50.5,50.1,30.7,30.3,30.5,40.8,50.9,50.5,50.1,30.7,80.0,20.0,30.1,80.2,30.3,30.5,40.8,50.9,50.5,50.1,30.7,30.3,30.5,40.8,50.9,50.5,50.1,30.7]
+
+		$(document).ready(function() {
+			var chart = new Highcharts.Chart({
+				chart: {
+					renderTo: 'overview',
+					defaultSeriesType: 'spline'
+				},
+				title: {
+					text: 'Diagram of ppm'
+				},
+				subtitle: {
+					text: 'Over the last time'
+				},
+				xAxis: {
+					type: 'datetime'
+				},
+				yAxis: {
+					title: {
+						text: 'Level of CO (ppm)'
+					},
+					min: 10,
+					minorGridLineWidth: 0, 
+					gridLineWidth: 0,
+					alternateGridColor: null,
+					plotBands: [{ // Light air
+						from: 100,
+						to: 150,
+						color: 'rgba(0, 240, 255, .1)'
+					},  { // Fresh breeze
+						from: 150,
+						to: 190,
+						color: 'rgba(0, 102, 255, .1)'
+					}, { // High wind
+						from: 190,
+						to: 220,
+						color: 'rgba(255, 252, 0, .1)'
+					}, { // High wind
+						from: 220,
+						to: 250,
+						color: 'rgba(255, 156, 0, .1)'
+					}
+					, { // High wind
+						from: 220,
+						to: 350,
+						color: 'rgba(255, 0, 0, .1)'
+					}
+				]
+				},
+				labels: {
+					items: [{
+						// To do: 
+						// Make a common labels layer and combine it with credits and titles?
+						// Use the Layer object and add a method for drawing HTML.
+						// Make balloons and make usable for individual dataLabels
+						html: 'low',
+						style: {
+							left: '10px',
+							top: '275px'
+						}		
+					}, {
+						html: 'undermedium',
+						style: {
+							left: '10px',
+							top: '245px'
+						}		
+					}, {
+						html: 'medium',
+						style: {
+							left: '10px',
+							top: '205px'
+						}		
+					}, {
+						html: 'high',
+						style: {
+							left: '10px',
+							top: '160px'
+						}		
+					}, {
+						html: 'impresiv',
+						style: {
+							left: '10px',
+							top: '105px'
+						}		
+					}, {
+						html: 'die',
+						style: {
+							left: '10px',
+							top: '40px'
+						}		
+					}]
+				},
+				tooltip: {
+					formatter: function() {
+			                return "ppm : 77.0";
+					}
+				},
+				plotOptions: {
+					spline: {
+						lineWidth: 3,
+						marker: {
+							enabled: false
+						},
+						pointInterval: 3600000, // one day
+						
+	
+						
+						
+						
+						pointStart: Date.UTC(2009, 5, 12, 0, 0, 0),
+						
+						states: {
+							hover: {
+								marker: {
+									enabled: false,
+									symbol: 'circle',
+									radius: 1,
+									lineWidth: 3
+								}
+							}
+						}
+					}
+				},
+				series: [{
+					name: 'Temp',
+					data: datappm
+			
+				}]
+			});
+			
+	
+		
+			
+			
+		});
+		</script> 
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+            <h2>CO analyzer</h2>
+        </div>
+    </header>
+    <div class="containerApp">
+        <div class="leftpart">
+                    
+        </div>
+     <div class="centerpart">
+		<div id="container">    
+			<div id="overview" style="width: 1080px; height: 550px"></div>  
+		</div>
+            <div class="rightpart"> 
+				Data taken from the CO analyzer displayed as a graph.  
+				<br>
+				Axis X - reflects the unit of time.
+				<br>
+				Axis Y - reflects the unit level СО.
+		</div>
+    </div>
+              <footer>
+            <!-- <div class="containerFooter">
+            <h2>CO analizator</h2>
+           </div>  -->
+        </footer>
+</body>
+</html>
