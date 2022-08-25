@@ -7,7 +7,7 @@
   <p align="center">
    Analyzer CO, based on ESP32.
 
- <h3 align="center">By Igor Yahan</h3>
+ <h3 align="center">By Igor Yashan</h3>
  <h3 align="center">README</h3>
 </div>
 
