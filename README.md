@@ -59,7 +59,7 @@ Aпаратна та програмна частина комплексу для
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@igoryashkka](https://twitter.com/igoryashkka) - Igor404ik@gmail.com
+ twitter/google - [@igoryashkka](https://twitter.com/igoryashkka) - Igor404ik@gmail.com
 
 
 
