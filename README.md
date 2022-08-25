@@ -1,5 +1,5 @@
 
-                                                         [![LinkedIn][linkedin-shield]][linkedin-url]
+   [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -11,8 +11,8 @@
     <br />
     <br />
   
-    <h3 align="center">By Igor Yahan</h3>
-    <h3 align="center">README</h3>
+ <h3 align="center">By Igor Yahan</h3>
+ <h3 align="center">README</h3>
 </div>
 
 
