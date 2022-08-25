@@ -3,8 +3,8 @@
 #include <SSD1306Wire.h>
 
 // Access Point credentials
-const char *ssid = "TEST-123";
-const char *password = NULL; // "12345678";
+const char *ssid = "";
+const char *password = NULL; // "";
 int connections = 0;
 
 // Onboard WiFi server
@@ -13,7 +13,7 @@ String responseHTML = "<!DOCTYPE html><html>"
                       "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
                       "<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}"
                       "</style></head>"
-                      "<body><h1>ESP32 Web Server</h1>"
+                      "<body><h1> CO2-Analyzer-ESP32</h1>"
                       "<p>Hello World</p>"
                       "</body></html>";
 
