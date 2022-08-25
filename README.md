@@ -1,28 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -87,6 +64,12 @@
 
 Aпаратна та програмна частина комплексу для вимірювання відносної концентрації окису вуглецю у видиху людини.
 
+Проблеми ранньої й повної діагностики стану здоров’я людини були і залишаються актуальними. Вирішення цих проблем стає більш успішним при застосуванні нових діагностичних приладів та інформаційних технологій. Одним з неінвазивних способів діагностики є аналіз складу видихуваного повітря, яке представляє собою суміш газів різного ендогенного походження з дихальних шляхів, шлункового каналу й ротової порожнини. Компоненти цієї суміші можуть служити маркерами певних станів організму людини.
+Отруєння чадним газом має місце настільки часто, що за кількістю поступається хіба що отруєнню алкоголем. Через численні отруєння ним людей на виробництві та в побуті чадний газ став відомою отрутою. Знаючи принцип його впливу на організм людини і величини токсичних концентрацій можна вибрати способи індивідуального захисту та безпечної поведінки людей. Найгірше те, що монооксид вуглецю набагато швидше та сильніше може зв’язуватися з гемоглобіном у порівнянні з киснем, витісняючи його і утворюючи досить стійку сполуку — карбоксигемоглобін. Тоді рівень кисню, що доставляється кров'ю органам і тканинам, різко знижується і настає кисневе голодування. Тобто кров втрачає здатність переносити кисень, що пошкоджує мозок та інші органи. 
+Існуючі на сьогоднішній день пристрої для аналізу газового складу видиху людини передбачені для вимірювання кисню та вуглекислого газу, але вони не вимірюють СО, що напряму пов'язано з рівнем гемоглобіну у крові, також вироби мають великі розміри та дорого коштують. 
+Саме тому випливає актуальність розробки мобільних і низько собівартнісних засобів для вимірювання відносного рівня монооксиду вуглецю у видиху людини. 
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -109,7 +92,7 @@ Aпаратна та програмна частина комплексу для
 
 1) 
 
-]\
+
 
 
 
